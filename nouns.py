@@ -1,7 +1,7 @@
 #!/usr/bin/python
 from textblob import TextBlob
-randtext = """The Computer was first invented in the year 1945."""
-rndtext = TextBlob("The computer was first invented in the year 1945.")
-print(rndtext.tags)		##Gives attribute of every word: Noun, Verb...
-blob = TextBlob(randtext)
+textinput = """Insert random text here to get the noun phrases"""
+randomText = TextBlob("Same random text here will give the type/attribute of every word")
+print(randomText.tags)		##Gives attribute of every word: Noun, Verb...
+blob = TextBlob(textinput)
 print(blob.noun_phrases)	##Gives only the noun phrases
